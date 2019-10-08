@@ -1,0 +1,81 @@
+body{
+    font-family: Arial;
+    background:#2e73a1 url("icon.png") no-repeat fixed center;
+    color:white;
+    background-size:500px;
+
+}
+h1{
+    text-align:center;
+}
+input{
+    width: 300px;
+    height:25px;
+    margin-top:10px;
+    background:#fff;
+    color:#000;
+    border:none;
+    box-shadow:1px 1px 5px #4b4b4b;
+    border-radius:10px;
+    margin-bottom:10px;
+}
+table{
+    width: 60%;
+    display: inline;
+}
+th,td{
+   padding:20px 20px 5px 5px;
+}
+.cad input{
+    width: 90px;
+}
+.btn:hover{
+    box-shadow:1px 1px 5px #4b4b4b;
+}
+.btn-edit{
+    background:#ff9f1a;
+    color:#fff;
+    border:none;
+    box-shadow:1px 1px 5px #ffaf40;
+    width: 60px;
+}
+.btn-del{
+        background:#ff3838;
+        color:#fff;
+        border:none;
+        box-shadow:1px 1px 5px #ff4d4d;
+        width: 60px;
+        margin-bottom:20px;
+}
+.tabela{
+    width:60%;
+}
+.pesq{
+    width: 200px;
+}
+.btn-pesq{
+    width: 100px;
+}
+
+.dados{
+    border: 1px solid #ddd;
+    border-radius:100px;
+    box-shadow:1px 1px 20px 0px #4b4b4b;
+    margin:auto;
+    text-align: center;
+    align-content: center;
+    width:300px;
+}
+form{
+    float:left;
+}
+table{
+    float:right;
+    border-collapse: collapse;
+}
+table,td,th{
+    border-bottom: 1px solid #ddd;
+}
+th{
+    border:none;
+}

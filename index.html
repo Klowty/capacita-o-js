@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Capacitação</title>
+</head>
+<body>
+    <h1>Capacitação JS</h1>
+        <div class="dados">
+                <p id="proj">Total de projetos: <b id="projetos">0/18</b></p>
+                <p id="fat">Faturamento (%): <b id="faturamento">0</b><b>%</b></p>
+        </div>
+    <form action="" id="formulario" class="formulario">
+        <div class="input">
+            <label for="nome">Nome: </label><br>
+            <input type="text" name="nome" id="nome">
+        </div>
+        <div class="input"> 
+            <label for="stacks">Stacks: </label><br>
+            <input type="text" name="stacks" id="stacks">
+        </div>
+        <div class="input">
+            <label for="valor">Valor: </label><br>
+            <input type="number" name="valor" id="valor">
+        </div>
+        <div class="input">
+            <label for="dias">Dias úteis: </label><br>
+            <input type="number" name="dias" id="dias">
+        </div>
+        <div class="input">
+            <label for="devs">Desenvolvedores: </label><br>
+            <input type="text" name="devs" id="devs">
+        </div>
+        <br>
+        <div class="cad">
+            <input type="button" name="cad" id="env" class="btn btn-env" value="Enviar" onclick="clicar()">
+        </div>
+            </form>
+            <div class="tabela">
+    <table id="tabela">
+        <thead>
+        <tr>
+            <th>Nome</th>
+            <th>Stacks</th>
+            <th>Valor</th>
+            <th>Dias úteis</th>
+            <th>Desenvolvedores</th>
+            <th>Ações</th>
+            <th><input type="text" class="pesq" id="pesquisa" placeholder="pesquisar"><input onclick="buscar()" type="submit" class="btn btn-pesq" value="Buscar"></th>
+        </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+</div>
+    <script src="script.js"></script>
+                    <script>
+                        function piscaf(item) {
+
+                            var ob = document.getElementById(item);
+                            if(faturamento.innerHTML < 100){
+                            if (ob.style.color == "white") {
+
+                                ob.style.color = "red";
+
+                            } else {
+
+                                ob.style.color = "white";
+
+                            }
+
+                        }
+                        else if(faturamento.innerHTML > 100){
+                            if (ob.style.color == "white") {
+
+                             ob.style.color = "lightgreen";
+
+                            } else {
+
+                            ob.style.color = "white";
+
+                             }
+                        }else{
+                                                          if (ob.style.color == "white") {
+
+                                                          ob.style.color = "red";
+
+                                                          } else {
+
+                                                          ob.style.color = "white";
+
+                                                          }
+                        } 
+
+
+                    }
+                                        t = setInterval("piscaf('fat')", 500)
+
+                                                                function piscap(item) {
+
+                                                                var ob = document.getElementById(item);
+                                                                if(contador < 18){ if
+                                                                    (ob.style.color=="white" ) { ob.style.color="red" ;
+                                                                    } else { ob.style.color="white" ; } } else
+                                                                    if(contador > 18){
+                                                                    if (ob.style.color == "white") {
+
+                                                                    ob.style.color = "lightgreen";
+
+                                                                    } else {
+
+                                                                    ob.style.color = "white";
+
+                                                                    }
+                                                                    }
+
+
+                                                                    }
+                                                                    a = setInterval("piscap('proj')", 500)
+                                    </script>
+</body>
+</html>
